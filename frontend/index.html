@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>DevSoc application</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" />
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" />
+        <link rel="stylesheet" href="index.css" />
+        <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet">
+    </head>
+    <body>
+        <!--HEADER-->
+        <div class="sidebar">
+            <div class="logo-details">
+                <img src="assets/unilectives.svg" 
+                width="45" height="45">
+            </div>
+            <ul class="nav-links">
+                <li>
+                    <i class="uil uil-book-open"></i>
+                </li>
+                <li>
+                    <i class="uil uil-shield-check"></i>
+                </li>
+            </ul>
+
+            <ul class="bottom-nav-links">
+                <li>
+                    <i class="uil uil-arrow-to-right"></i>
+                </li>
+                <li>
+                    <i class="uil uil-user-circle"></i>
+                </li>
+                <li>
+                    <i class="uil uil-moon"></i>
+                </li>
+                <li>
+                    <i class="uil uil-signout"></i>
+                </li>
+            </ul>
+        </div>
+
+        <main class="main">
+            <div class="home-data">
+                <h3 class="devsoc-presents">DevSoc presents</h3>
+                <h1 class="unielectives" id="title">unilectives</h1>
+                <p class="one-stop-shop">
+                    Your one-stop shop for UNSW course and elective reviews.
+                </p>
+            </div>
+            <!--==================== STRETCH TASK 2 =======================-->
+            <div class="overlay" id="overlay">
+                <div class="search-box" id="search-box">
+                    <button class="dismiss-btn" id="dismiss-btn">&times;</button>
+                    <p>Peekaboo</p>
+                </div>
+            </div>
+            <!--===========================================================-->
+
+            <div class="navigation" id="search-bar">
+                <i class="uil uil-search"></i>
+                <input type="text" placeholder="Search for a course e.g. COMP1511" class="search-bar">
+            </div>
+
+            <button class="sort-by" id="sort-by-button">Sort by
+                <i class="uil uil-angle-down"></i>
+            </button>
+
+            <div class="testimonials">
+                <div class="border">
+                    <div class="row">
+                        <div class="col">
+                            <div class="testimonial">
+                                <div class="first-row">
+                                    <div class="course-name">COMP1511</div>
+                                    <div class="stars">
+                                        <i class="lni lni-star-fill"></i>
+                                        <i class="lni lni-star-fill"></i>
+                                        <i class="lni lni-star-fill"></i>
+                                        <i class="lni lni-star-fill"></i>
+                                        <i class="lni lni-star-fill"></i>
+                                    </div>
+                                    <span class="reviews">68 reviews</span>
+                                </div>
+                                <span class="course-description">Programmming Fundamentals</span>
+                                <div class="term-row">
+                                        <button class="term-1">Term 1</button>
+                                        <button class="term-2">Term 2</button>
+                                        <button class="term-3">Term 3</button>
+                                </div>
+                            </div>
+
+                            <div class="testimonial">
+                                <div class="first-row">
+                                    <div class="course-name">COMP2521</div>
+                                    <div class="stars">
+                                        <i class="lni lni-star-fill"></i>
+                                        <i class="lni lni-star-fill"></i>
+                                        <i class="lni lni-star-fill"></i>
+                                        <i class="lni lni-star-fill"></i>
+                                        <i class="lni lni-star-empty"></i>
+                                    </div>
+                                    <span class="reviews">36 reviews</span>
+                                </div>
+                                <span class="course-description">Data Structures and Algorithms</span>
+                                <div class="term-row">
+                                        <button class="summer">Summer</button>
+                                        <button class="term-1">Term 1</button>
+                                        <button class="term-2">Term 2</button>
+                                        <button class="term-3">Term 3</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="testimonial">
+                                <div class="first-row">
+                                    <div class="course-name">COMP1531</div>
+                                    <div class="stars">
+                                        <i class="lni lni-star-fill"></i>
+                                        <i class="lni lni-star-fill"></i>
+                                        <i class="lni lni-star-fill"></i>
+                                        <i class="lni lni-star-fill"></i>
+                                        <i class="lni lni-star-empty"></i>
+                                    </div>
+                                    <span class="reviews">47 reviews</span>
+                                </div>
+                                <span class="course-description">Software Engineering Fundamentals</span>
+                                <div class="term-row">
+                                        <button class="term-1">Term 1</button>
+                                        <button class="term-2">Term 2</button>
+                                        <button class="term-3">Term 3</button>
+                                </div>
+                            </div>
+
+                            <div class="testimonial">
+                                <div class="first-row">
+                                    <div class="course-name">COMP2511</div>
+                                    <div class="stars">
+                                        <i class="lni lni-star-fill"></i>
+                                        <i class="lni lni-star-fill"></i>
+                                        <i class="lni lni-star-fill"></i>
+                                        <i class="lni lni-star-empty"></i>
+                                        <i class="lni lni-star-empty"></i>
+                                    </div>
+                                    <span class="reviews">33 reviews</span>
+                                </div>
+                                <span class="course-description">Object-Oriented Design & Programming</span>
+                                <div class="term-row">
+                                        <button class="term-1">Term 1</button>
+                                        <button class="term-2">Term 2</button>
+                                        <button class="term-3">Term 3</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="testimonial">
+                                <div class="first-row">
+                                    <div class="course-name">COMP1521</div>
+                                    <div class="stars">
+                                        <i class="lni lni-star-fill"></i>
+                                        <i class="lni lni-star-fill"></i>
+                                        <i class="lni lni-star-fill"></i>
+                                        <i class="lni lni-star-fill"></i>
+                                        <i class="lni lni-star-empty"></i>
+                                    </div>
+                                    <span class="reviews">40 reviews</span>
+                                </div>
+                                <span class="course-description">Computer Systems Fundamentals</span>
+                                <div class="term-row">
+                                        <button class="term-1">Term 1</button>
+                                        <button class="term-2">Term 2</button>
+                                        <button class="term-3">Term 3</button>
+                                </div>
+                            </div>
+
+                            <div class="testimonial">
+                                <div class="first-row">
+                                    <div class="course-name">COMP3311</div>
+                                    <div class="stars">
+                                        <i class="lni lni-star-fill"></i>
+                                        <i class="lni lni-star-fill"></i>
+                                        <i class="lni lni-star-fill"></i>
+                                        <i class="lni lni-star-fill"></i>
+                                        <i class="lni lni-star-empty"></i>
+                                    </div>
+                                    <span class="reviews">33 reviews</span>
+                                </div>
+                                <span class="course-description">Database Systems</span>
+                                <div class="term-row">
+                                        <button class="term-1">Term 1</button>
+                                        <button class="term-2">Term 2</button>
+                                        <button class="term-3">Term 3</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <script src="script.js"></script>
+    </body>
+</html>

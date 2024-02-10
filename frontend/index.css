@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+:root {
+    --default-font-family: 'Inter', sans-serif
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--default-font-family);
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 97px;
+    background-color: #f5f5f5;
+}
+
+.sidebar .logo-details{
+    height: 90px;
+    width: 50%;
+    display: flex;
+    text-align: center;
+    border-bottom: 2px solid #ccc;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sidebar .logo-details img {
+    margin-top: 20px;
+}
+
+.sidebar .nav-links{
+    height: 100%;
+    padding-top: 30px;
+}
+
+.sidebar .nav-links li{
+    position: relative;
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.sidebar .nav-links li i{
+    height: 50px;
+    min-width: 90px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 30px;
+    margin-left: 30px;
+}
+
+.sidebar .bottom-nav-links{
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.sidebar .bottom-nav-links li{
+    position: relative;
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.sidebar .bottom-nav-links li i{
+    height: 50px;
+    min-width: 90px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 30px;
+    margin-left: 30px;
+}
+
+.main{
+    padding-top: 34px;
+    padding-left: 244px;
+}
+
+.home-data h3{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    color: black;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24.205px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 8;
+}
+
+.home-data h1{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    color: #1479f2;
+    font-size: 96px;
+    font-weight: 700;
+    line-height: 116.182px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 9;
+    cursor: pointer;
+}
+
+.home-data p{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    color: black;
+    font-size: 21px;
+    font-weight: 800;
+    line-height: 25.415px;
+    text-align: left;
+    white-space: nowrap;
+}
+
+
+.navigation input{
+    width: 1424px;
+    height: 49px;
+    top: 264px;
+    left: 244px;
+    padding-left: 45px;
+    background: #ffffff;
+    border: 3px solid #a9b7eb;
+    border-radius: 6px;
+    padding: 5px 10px;
+}
+
+.navigation input:focus{
+    outline-color: #a9b7eb;
+}
+
+.navigation input::placeholder{
+    width: 414px;
+    height: 33px;
+    color: #9baae1;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 19.364px;
+}
+
+.search-bar{
+    width: 414px;
+    height: 33px;
+    padding-left: 45px;
+    color: #9baae1;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19.364px;
+    text-align: center;
+    margin-top: 49px;
+}
+
+.search-bar:focus::placeholder {
+    color: transparent;
+}
+
+.navigation i{
+    position: absolute;
+    left: 250px;
+    transform: translateY(150%);
+    font-size: 30px;
+    color: #9baae1;
+    padding-right: 10px;
+    margin-right: 10px;
+}
+
+.sort-by {
+    position: absolute;
+    width: 255px;
+    height: 54px;
+    top: 320px;
+    left: 244px;
+    cursor: pointer;
+    background: #ffffff;
+    border: 1px solid #999999;
+    border-radius: 6px;
+    color: #959595;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: left;
+    white-space: nowrap;
+    padding-left: 20px;
+}
+
+.sort-by i{
+    color: black;
+    position: absolute;
+    left: 200px;
+    font-size: 30px;
+}
+
+.testimonials{
+    position: absolute;
+    top: 390px;
+    left: 244px;
+    z-index: 7;
+}
+
+.row{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 60px;
+    grid-row-gap: 80px;
+}
+
+.testimonial{
+    flex-shrink: 0;
+    position: relative;
+    width: 433px;
+    height: 262px;
+    background: #fafafa;
+    z-index: 7;
+    border-radius: 12px;
+    box-shadow: 0 11px 18.6px 0 rgba(0, 0, 0, 0.15);
+    margin-bottom: 65px;
+}
+
+.testimonial .first-row {
+    position: relative;
+    width: 381px;
+    height: 72px;
+    margin: 41px 0 0 26px;
+    z-index: 20;
+}
+
+.testimonial .course-name{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    width: 179px;
+    height: 72px;
+    top: 26px;
+    left: 0;
+    color: #000000;
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 38.727px;
+    text-align: left;
+}
+
+.testimonial .stars{
+    position: absolute;
+    top: 24px;
+    left: 223px;
+    letter-spacing: -5px;
+    color: #b789e5;
+}
+
+.testimonial .stars i{
+    font-size: 35px;
+}
+
+.reviews{
+    position: absolute;
+    top: 65px;
+    left: 228px;
+    color: #a6a6a6;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.943px;
+    text-align: left;
+    
+}
+
+.course-description{
+    position: relative;
+    width: 259px;
+    height: 48px;
+    margin: 0px 0 0px 29px;
+    top: 25px;
+    color: #000000;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 20.574px;
+    text-align: left;
+}
+
+.overlay{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 100;
+}
+
+.dismiss-btn{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.search-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 2px solid black;
+}
+
+.term-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 206px;
+    height: 29px;
+    margin: 90px 0px 0px 32px;
+}
+
+.term-row button{
+    flex-shrink: 0;
+    position: relative;
+    width: 60px;
+    height: 28px;
+    cursor: pointer;
+    background: #ccebf6;
+    border: none;
+    z-index: 22;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 400;
+    color: black;
+    line-height: 14.523px;
+    text-align: center;
+    white-space: nowrap;
+    margin-right: 10px;
+}
+
+
